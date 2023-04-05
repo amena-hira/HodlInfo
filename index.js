@@ -47,7 +47,7 @@ const displayData = (tickersData) => {
       <td>${data.name}</td>
       <td>₹ ${data.last}</td>
       <td>₹ ${data.buy} / ₹ ${data.sell}</td>
-      <td><i class="fa-solid fa-caret-down"></i> ${data.volume}</td>
+      <td>▼ ${data.volume}</td>
       <td>${data.base_unit}</td>
     </tr>
   `;
@@ -58,7 +58,7 @@ const displayData = (tickersData) => {
       <td>${data.name}</td>
       <td>₹ ${data.last}</td>
       <td>₹ ${data.buy} / ₹ ${data.sell}</td>
-      <td><i class="fa-solid fa-caret-up"></i> ${data.volume}</td>
+      <td>▲ ${data.volume}</td>
       <td>${data.base_unit}</td>
     </tr>
   `;
