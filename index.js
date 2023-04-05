@@ -29,7 +29,7 @@ function darkMode() {
 }
 
 const loadData = async () => {
-    const url = `http://localhost:5000/tickersData`
+    const url = `https://hold-info-server.vercel.app/tickersData`
     const res = await fetch(url)
     const tickersData = await res.json()
     displayData(tickersData)
