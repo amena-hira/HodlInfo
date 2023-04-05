@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://hodlinfo.com/favicon.ico">
+    <title>HodlInfo | ₹ 1,61,686</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b0e31b9367.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="left-header">
+                <h1 class="logo">HODLINFO</h1>
+            </div>
+            <div>
+                <nav class="nav-container">
+                    <div class="dropdown">
+                        <button class="dropbtn" id="dropbtn">INR <i class="fa-solid fa-caret-down"></i></button>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="#">INR</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" id="dropbtn">BTC <i class="fa-solid fa-caret-down"></i></button>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="#">BTC</a>
+                            <a href="#">ETH</a>
+                            <a href="#">USDT</a>
+                            <a href="#">XRP</a>
+                            <a href="#">TRX</a>
+                            <a href="#">DASH</a>
+                            <a href="#">ZEC</a>
+                            <a href="#">XEM</a>
+                            <a href="#">IOST</a>
+                            <a href="#">WIN</a>
+                            <a href="#">BTT</a>
+                            <a href="#">WRX</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn" id="dropbtn">BUY BTC</button>
+                    </div>
+                </nav>
+            </div>
+            <div class="right-header">
+                <div class="progress-container">
+                    <div class="progress"></div>
+                    <div class="number">49</div>
+                </div>
+                <div>
+                    <button class="btn"><i class="fa-brands fa-telegram"></i>Connect Telegram</button>
+                </div>
+                <div>
+                    <label class="toggle">
+                        <input type="checkbox" onclick="darkMode()">
+                        <div class="slider">
+                            <div class="circle"></div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="trade-container">
+            <div>
+                <p class="number-percentage">0.56 %</p>
+                <p class="number-heading" id="number-heading">5 Mins</p>
+            </div>
+            <div>
+                <p class="number-percentage">0.93 %</p>
+                <p class="number-heading" id="number-heading">1 Hour</p>
+            </div>
+            <div>
+                <p class="trade-top-heading" id="trade-top-heading">Best Price to Trade</p>
+                <h1 class="trade-heading" id="trade-heading">₹ 1,61,641</h1>
+                <p class="trade-subheading" id="trade-subheading">Average ETH/INR net price including commission</p>
+            </div>
+            <div>
+                <p class="number-percentage">3.25 %</p>
+                <p class="number-heading" id="number-heading">1 Day</p>
+            </div>
+            <div>
+                <p class="number-percentage">4.84 %</p>
+                <p class="number-heading" id="number-heading">7 Days</p>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <table class="table" id="table">
+            <thead>
+                <tr>
+                    <th id="th">
+                        <h4>#</h4>
+                    </th>
+                    <th id="th">
+                        <h4>
+                            Platform
+                        </h4>
+                    </th>
+                    <th id="th">
+                        <h4>Last Traded Price</h4>
+                    </th>
+                    <th id="th">
+                        <h4>Buy / Sell Price</h4>
+                    </th>
+                    <th id="th">
+                        <h4>Volume</h4>
+                    </th>
+                    <th id="th">
+                        <h4>Base Unit</h4>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <button class="footer-btn">Add hodlInfo to home screen</button>
+    </footer>
+    <script src="index.js">
+        
+    </script>
+</body>
+
+</html>

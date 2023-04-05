@@ -1,0 +1,360 @@
+body {
+    margin: 0;
+}
+
+/* dark mode */
+.dark-mode {
+    background-color: black !important;
+    color: white !important;
+}
+
+.dark-table {
+    color: black;
+}
+
+.tr-dark {
+    background-color: #2E3241;
+    color: white;
+}
+
+.dark-trade-subheading,
+.dark-trade-top-heading,
+.dark-trade-heading,
+.th-dark,
+.dark-number-heading {
+    color: white !important;
+}
+
+.dark-dropbtn {
+    background-color: #2e3241 !important;
+    color: #fff !important;
+    border: 0 !important;
+}
+
+/* header & logo */
+.header,
+.main {
+    width: 95%;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #5dc7c2;
+}
+
+/* navbar btn */
+.nav-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 0px 25px;
+}
+
+.dropbtn {
+    background-color: #f8f9fa;
+    border-color: #6c757d;
+    padding: 6px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 0 2px #ddd;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    color: #212529;
+    min-width: 10rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 0.25rem;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0.25rem 1.5rem;
+    text-decoration: none;
+    display: block;
+    margin: 7px 0px;
+
+}
+
+.dropdown-content a:hover {
+    color: #16181b;
+    background-color: #f8f9fa;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #fff;
+    background-color: #6c757d;
+    box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, .5);
+}
+
+/* left & right header */
+.left-header,
+.right-header {
+    padding: 0px 15px;
+}
+
+.right-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+}
+
+/* btn telegram */
+.btn {
+    padding: 6px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: white;
+    background-color: #5dc7c2;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.fa-brands {
+    margin-right: 3px;
+}
+
+/* circle progress */
+.progress-container {
+    width: 34px;
+    height: 34px;
+    position: relative;
+}
+
+.progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #5dc7c2;
+    box-sizing: border-box;
+    clip: rect(0, 17px, 34px, 0);
+    animation: rotate 5s linear infinite;
+}
+
+.number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    font-weight: bold;
+    color: #5dc7c2;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* dark light */
+.toggle {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 2px #ddd;
+    border-radius: 34px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+input:checked+.slider {
+    background-color: #212121;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.circle {
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #5dc7c2;
+    box-shadow: 0px 0px 4px #ddd;
+    transition: transform 0.2s ease-in-out;
+}
+
+input:checked+.slider .circle {
+    transform: translateX(26px);
+}
+
+/* trade */
+
+.trade-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 15px 0px;
+    padding: 10px 0px;
+}
+
+.number-percentage {
+    color: #5dc7c2;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 54px;
+}
+
+.number-heading {
+    font-size: 20px;
+    color: #0c0f48;
+    opacity: .45;
+    font-weight: 300;
+    letter-spacing: 0.75px;
+    margin: 0;
+}
+
+.trade-subheading {
+    opacity: 0.45;
+    color: #0c0f48;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+    margin: 0;
+}
+
+.trade-top-heading {
+    font-size: 28px;
+    color: #0c0f48;
+    opacity: .45;
+    font-weight: 100;
+    letter-spacing: .75px;
+    margin: 0;
+}
+
+.trade-heading {
+    font-weight: 400;
+    font-size: 80px;
+    color: #0c0f48;
+    margin: 0;
+}
+
+/* table */
+
+.table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 0 1em;
+    margin-top: 40px;
+}
+
+th {
+    color: #0c0f48;
+    padding: 0 12px;
+    font-size: 18px;
+    font-family: oswald;
+    opacity: .45;
+    letter-spacing: 1px;
+    margin: 0 0 -5px;
+}
+
+th h4 {
+    margin: 0;
+}
+
+tbody tr {
+    background-color: #f8f9fa;
+}
+
+tbody tr td {
+    padding: 15px;
+    font-size: 16px;
+}
+
+/* select even rows in last two columns */
+.table tr:nth-child(even) td:nth-last-child(-n+2) {
+    color: #5dc7c2;
+
+}
+
+/* select odd rows in last two columns */
+.table tr:nth-child(odd) td:nth-last-child(-n+2) {
+    color: #da5757;
+}
+/* footer */
+footer {
+    background-color: black;
+    text-align: center;
+    width: 100vw;
+    padding: 6px 0px;
+    position: fixed;
+    bottom: 0px;
+}
+
+.footer-btn {
+    color: #17a2b8;
+    background-color: black;
+    border: 1px solid #17a2b8;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+.footer-btn:hover{
+    background-color: #17a2b8;
+    color: white;
+}
